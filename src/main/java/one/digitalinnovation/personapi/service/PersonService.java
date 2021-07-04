@@ -30,7 +30,7 @@ public class PersonService {
                 .build();
     }
 
-    public List<PersonDTO> listAll() {
+    /*public List<PersonDTO> listAll() {
         List<Person> allPeople = personRepository.findAll();
         return allPeople.stream()
                 .map(personMapper::toDTO)
@@ -60,5 +60,5 @@ public class PersonService {
     private Person verifyIfExists(Long id) throws PersonNotFoundException {
         return personRepository.findById(id)
                 .orElseThrow(() -> new PersonNotFoundException(id));
-    }
+    }*/
 }
